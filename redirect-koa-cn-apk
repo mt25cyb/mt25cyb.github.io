@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>重定向下载</title>
+  <script>
+    (function() {
+      // 超时时间（毫秒）
+      const TIMEOUT = 5000;
+
+      // 使用同源策略获取重定向地址
+      const getRedirectUrl = async (url) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = url;
+          script.onload = () => {
+            resolve(window.redirectUrl);  // 假设目标服务器返回一个名为 "redirectUrl" 的全局变量
+            document.head.removeChild(script);
+          };
+          script.onerror = () => {
+            reject('获取重定向地址失败：网络错误。');
+          };
+          document.head.appendChild(script);
+        });
+      };
+
+      // 更新显示结果
+      const updateResult = (result) => {
+        document.getElementById('result').textContent = result;
+      };
+
+      // 获取并显示重定向地址
+      const fetchAndDisplayRedirectUrl = async (url) => {
+        try {
+          const redirectUrl = await getRedirectUrl(url);
+          updateResult(redirectUrl);
+          window.location.href = redirectUrl;  // 直接唤起下载
+        } catch (error) {
+          updateResult('获取重定向地址失败：' + error);
+        }
+      };
+
+      // 主函数
+      const main = async () => {
+        const url = 'http://koa-download.kingsgroup.cn/koa.apk';
+        fetchAndDisplayRedirectUrl(url);
+      };
+
+      // 启动主函数
+      main();
+    })();
+  </script>
+</head>
+<body>
+  <h1>重定向下载</h1>
+  <p id="result"></p>
+</body>
+</html>
