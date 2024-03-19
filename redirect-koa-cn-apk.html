@@ -9,11 +9,32 @@
     <h1>最新版本直链：</h1>
     <div id="redirect-url"></div>
     <script>
-      fetch('http://koa-download.kingsgroup.cn/koa.apk')
-        .then(response => response.url)
-        .then(url => {
-          document.getElementById('redirect-url').innerHTML = url;
-        });
+      // 创建一个新的 XMLHttpRequest 对象
+      const xhr = new XMLHttpRequest();
+      
+      // 打开一个 GET 请求，将 `koa.apk` 文件的 URL 作为参数
+      xhr.open('GET', 'http://koa-download.kingsgroup.cn/koa.apk', true);
+      
+      // 设置响应类型为 blob，以便我们可以获取二进制数据
+      xhr.responseType = 'blob';
+      
+      // 监听 `load` 事件，该事件会在请求完成时触发
+      xhr.onload = function() {
+        // 检查请求是否成功
+        if (xhr.status === 200) {
+          // 从响应中获取重定向地址
+          const redirectUrl = xhr.getResponseHeader('Location');
+          
+          // 将重定向地址显示在网页中
+          document.getElementById('redirect-url').innerHTML = redirectUrl;
+        } else {
+          // 处理错误
+          console.error('请求失败:', xhr.status);
+        }
+      };
+      
+      // 发送请求
+      xhr.send();
     </script>
   </body>
 </html>
