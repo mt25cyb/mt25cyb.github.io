@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>阿瓦隆之王 国服客户端下载地址</title>
-</head>
-<body>
-  <p>通用更新/下载地址：<a href="http://koa-download.kingsgroup.cn/koa.apk">http://koa-download.kingsgroup.cn/koa.apk</a> </p>
-  <h1>最新版本直链：</h1>
-  <div id="redirect-url"></div>
-
-  <script>
-    fetch('http://koa-download.kingsgroup.cn/koa.apk')
-      。then(response => response.url)
-      。then(url => {
-        document.getElementById('redirect-url').innerHTML = url;
-      });
-  </script>
-</body>
+  <head>
+    <title>阿瓦隆之王 国服客户端下载地址</title>
+  </head>
+  <body>
+    <h1>通用更新/下载地址：<a href="http://koa-download.kingsgroup.cn/koa.apk">http://koa-download.kingsgroup.cn/koa.apk</a> </h1>
+    
+    <h1>最新版本直链：</h1>
+    <div id="redirect-url"></div>
+    <script>
+      fetch('http://koa-download.kingsgroup.cn/koa.apk')
+        .then(response => response.url)
+        .then(url => {
+          document.getElementById('redirect-url').innerHTML = url;
+        });
+    </script>
+  </body>
 </html>
