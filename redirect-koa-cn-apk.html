@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>获取重定向地址</title>
+</head>
+<body>
+  <script>
+    fetch('http://koa-download.kingsgroup.cn/koa.apk')
+      .then(response => response.url)
+      .then(url => {
+        console.log(url);
+        // 您可以使用此重定向地址执行其他操作，例如显示给用户或将其存储在变量中。
+      });
+  </script>
+</body>
+</html>
