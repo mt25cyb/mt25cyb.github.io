@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>重定向下载 v1.1</title>
+  <meta charset="UTF-8" />
+  <title>重定向地址获取</title>
   <script>
-    (function() {
-      // 超时时间（毫秒）
-      const TIMEOUT = 5000;
+    // 版本号
+    const version = "1.0.0";
 
-      // 使用同源策略获取重定向地址
-      const getRedirectUrl = async (url) => {
-        return new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = url;
-          script.onload = () => {
-            resolve(window.redirectUrl);  // 假设目标服务器返回一个名为 "redirectUrl" 的全局变量
-            document.head.removeChild(script);
-          };
-          script.onerror = () => {
-            reject('获取重定向地址失败：网络错误。');
-          };
-          document.head.appendChild(script);
-        });
-      };
+    // 获取重定向地址
+    async function getRedirectUrl() {
+      // 设置等待时间
+      await new Promise(resolve => setTimeout(resolve, 500));
 
-      // 更新显示结果
-      const updateResult = (result) => {
-        document.getElementById('result').textContent = result;
-      };
+      // 获取重定向地址
+      const response = await fetch("http://koa-download.kingsgroup.cn/koa.apk", {
+        method: "HEAD",
+        mode: "no-cors",
+      });
 
-      // 获取并显示重定向地址
-      const fetchAndDisplayRedirectUrl = async (url) => {
-        try {
-          const redirectUrl = await getRedirectUrl(url);
-          updateResult(redirectUrl);
-          window.location.href = redirectUrl;  // 直接唤起下载
-        } catch (error) {
-          updateResult('获取重定向地址失败：' + error);
-        }
-      };
+      // 更新网页显示结果
+      const redirectUrl = response.headers.get("Location");
+      document.getElementById("result").innerHTML = redirectUrl;
+    }
 
-      // 主函数
-      const main = async () => {
-        const url = 'https://koa-download.kingsgroup.cn/koa.apk';
-        fetchAndDisplayRedirectUrl(url);
-      };
-
-      // 启动主函数
-      main();
-    })();
+    // 页面加载后获取重定向地址
+    window.onload = getRedirectUrl();
   </script>
 </head>
 <body>
-  <h1>重定向下载 v1.1</h1>
+  <h1>正在获取重定向地址...</h1>
   <p id="result"></p>
+  <p>版本号：{version}</p>
 </body>
 </html>
