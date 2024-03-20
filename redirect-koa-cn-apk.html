@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <title>重定向地址获取</title>
     <script>
-      const version = '1.0.2'; // 版本号
+      const version = '1.0.3'; // 版本号
       const targetUrl = 'https://koa-download.kingsgroup.cn/koa.apk';
-      const redirectDiv = document.querySelector('#redirect'); // 使用 querySelector 确保 redirectDiv 存在
+      const redirectDiv = document.getElementById('redirect'); // 使用 getElementById 确保 redirectDiv 存在
 
       // 获取重定向地址
       async function getRedirectUrl() {
@@ -24,11 +24,11 @@
 
           // 更新网页显示
           if (redirectDiv) {
-            redirectDiv.innerHTML = `重定向地址：${redirectUrl}`;
+            redirectDiv.textContent = `重定向地址：${redirectUrl}`; // 使用 textContent 避免注入攻击
           }
         } catch (error) {
           if (redirectDiv) {
-            redirectDiv.innerHTML = `获取重定向地址失败：${error}`;
+            redirectDiv.textContent = `获取重定向地址失败：${error}`; // 使用 textContent 避免注入攻击
           }
         }
       }
