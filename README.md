@@ -24,3 +24,9 @@
 <br>[脚本页面](https://greasyfork.org/scripts/442098) | [安装脚本](https://greasyfork.org/scripts/442098/code/script.user.js)
 12. anti-redirect 去除重定向
 <br>[脚本页面](https://greasyfork.org/scripts/11915) | [安装脚本](https://greasyfork.org/scripts/11915/code/anti-redirect.user.js)
+
+# 自写自用的两个脚本
+1. NGA网址重定向
+<br>[脚本页面](https://greasyfork.org/scripts/22508) | [安装脚本](https://greasyfork.org/scripts/22508/code/script.user.js)
+2. UA自由切
+<br>[脚本页面](https://greasyfork.org/scripts/490764) | [安装脚本](https://greasyfork.org/scripts/490764/code/script.user.js)
