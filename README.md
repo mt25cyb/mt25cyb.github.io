@@ -1,5 +1,3 @@
-<details>
-  <summary>个人手机用脚本推荐</summary>
 
   ## 个人手机用脚本推荐
   脚本主要来自[Greasy Fork](https://greasyfork.org/)，可到网站上面去搜索看有没自己主要的。
@@ -48,9 +46,6 @@
   2. UA自由切
   <br>[脚本页面](https://greasyfork.org/scripts/490764) | [安装脚本](https://greasyfork.org/scripts/490764/code/script.user.js)
 
-</details>
-<details>
-  <summary>Converting GL.iNet MT2500 from CN to Global</summary>
 
   ## Converting GL.iNet MT2500 from CN to Global
   
@@ -98,4 +93,5 @@
   sync
   reboot
   ```
-</details>
+
+
