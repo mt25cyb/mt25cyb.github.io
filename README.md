@@ -71,13 +71,13 @@
   <br>[脚本页面](https://greasyfork.org/scripts/22508) | [安装脚本](https://greasyfork.org/scripts/22508/code/script.user.js)
 
   2. Disable Video AutoPlay
-  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Disable%20Video%20AutoPlay.user.js)
+  <br>[安装脚本](https://mt25cyb.github.io/JavaScript/Disable%20Video%20AutoPlay.user.js)
   
   3. Force Enable Zoom
-  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Force%20Enable%20Zoom.user.js)
+  <br>[安装脚本](https://mt25cyb.github.io/JavaScript/Force%20Enable%20Zoom.user.js)
 
   4. Remove Footers
-  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Remove%20Footers.user.js)
+  <br>[安装脚本](https://mt25cyb.github.io/JavaScript/Remove%20Footers.user.js)
 
   5. UA自由切 -- 暂时废弃
   <br>[脚本页面](https://greasyfork.org/scripts/490764) | [安装脚本](https://greasyfork.org/scripts/490764/code/script.user.js)
