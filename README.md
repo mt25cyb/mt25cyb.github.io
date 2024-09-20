@@ -2,48 +2,84 @@
   ## 个人手机用脚本推荐
   脚本主要来自[Greasy Fork](https://greasyfork.org/)，可到网站上面去搜索看有没自己主要的。
   
-  1. HTML5视频播放器增强脚本
-  <br>[脚本页面](https://greasyfork.org/scripts/381682) | [安装脚本](https://greasyfork.org/scripts/381682/code/script.user.js)
-  
-  2. 【屏蔽广告】屏蔽谷歌广告、百度广告、知乎广告、隐藏谷歌和百度搜索增强百度搜索结果的各种广告等等（过滤所有采用谷歌联盟和百度联盟等广告联盟的广告）
-  <br>[脚本页面](https://greasyfork.org/scripts/460743) | [安装脚本](https://greasyfork.org/scripts/460743/code/script.user.js)
-  
-  3. 骚扰拦截
+  1. 骚扰拦截 - 手机、电脑全平台通用:自动拦截或删除`下载弹窗`、`悬浮按钮`等影响用户体验的元素
   <br>[脚本页面](https://greasyfork.org/scripts/440871) | [安装脚本](https://greasyfork.org/scripts/440871/code/script.user.js)
+
+  2. 自动展开
+  <br>[脚本页面](https://greasyfork.org/scripts/438656) | [安装脚本](https://greasyfork.org/scripts/438656/code/script.user.js)
+
+  3. 链接管理 - 绕过搜索结果中的重定向链接,直链访问原始网站,删除网站重定向到安全页面,自动跳转中文文档,减少操作步骤和响应时间
+  <br>[脚本页面](https://greasyfork.org/scripts/443670) | [安装脚本](https://greasyfork.org/scripts/443670/code/script.user.js)
   
-  4. CSDN/知乎/哔哩哔哩/简书免登录去除弹窗广告 🛡
+  4. 移除复制后缀
+  <br>[脚本页面](https://greasyfork.org/scripts/472307) | [安装脚本](https://greasyfork.org/scripts/472307/code/script.user.js)
+
+  5. 网页限制解除(改)
+  <br>[脚本页面](https://greasyfork.org/scripts/28497) | [安装脚本](https://greasyfork.org/scripts/28497/code/script.user.js)
+
+  6. CSDN/知乎/哔哩哔哩/简书免登录去除弹窗广告 🛡
   <br>[脚本页面](https://greasyfork.org/scripts/428960) | [安装脚本](https://greasyfork.org/scripts/428960/code/script.user.js)
+
+  7. 置顶和置底按钮
+  <br>[脚本页面](https://greasyfork.org/scripts/500255) | [安装脚本](https://greasyfork.org/scripts/500255/code/anti-redirect.user.js)
   
-  5. Picviewer CE+
-  <br>[脚本页面](https://greasyfork.org/scripts/24204) | [安装脚本](https://greasyfork.org/scripts/24204/code/script.user.js)
-  
-  6. 聚合搜索引擎切换导航[手机版][移动端]
+  8. 聚合搜索引擎切换导航[手机版][移动端]
   <br>[脚本页面](https://greasyfork.org/scripts/462130) | [安装脚本](https://greasyfork.org/scripts/462130/code/script.user.js)
   
-  7. Github 增强 - 高速下载
-  <br>[脚本页面](https://greasyfork.org/scripts/412245) | [安装脚本](https://greasyfork.org/scripts/412245/code/script.user.js)
+  9. HTML5视频播放器增强脚本
+  <br>[脚本页面](https://greasyfork.org/scripts/381682) | [安装脚本](https://greasyfork.org/scripts/381682/code/script.user.js)
   
-  8. 网页限制解除(改)
-  <br>[脚本页面](https://greasyfork.org/scripts/28497) | [安装脚本](https://greasyfork.org/scripts/28497/code/script.user.js)
+  10. Picviewer CE+
+  <br>[脚本页面](https://greasyfork.org/scripts/24204) | [安装脚本](https://greasyfork.org/scripts/24204/code/script.user.js)
   
-  9. 大人的Greasyfork
+  11. 大人的Greasyfork
   <br>[脚本页面](https://greasyfork.org/scripts/23840) | [安装脚本](https://greasyfork.org/scripts/23840/code/script.user.js)
   
-  10. Greasy Fork 增强
+  12. Greasy Fork 增强
   <br>[脚本页面](https://greasyfork.org/scripts/467078) | [安装脚本](https://greasyfork.org/scripts/467078/code/script.user.js)
   
-  11. 图聚合展示by xhua
-  <br>[脚本页面](https://greasyfork.org/scripts/442098) | [安装脚本](https://greasyfork.org/scripts/442098/code/script.user.js)
+  13. Github 增强 - 高速下载
+  <br>[脚本页面](https://greasyfork.org/scripts/412245) | [安装脚本](https://greasyfork.org/scripts/412245/code/script.user.js)
   
-  12. anti-redirect 去除重定向
+  14. 【移动端】百度系优化
+  <br>[脚本页面](https://greasyfork.org/scripts/418349) | [安装脚本](https://greasyfork.org/scripts/418349/code/script.user.js)
+  
+  15. 【移动端】bilibili优化
+  <br>[脚本页面](https://greasyfork.org/scripts/494644) | [安装脚本](https://greasyfork.org/scripts/494644/code/script.user.js)
+  
+  16. 【移动端】微博优化
+  <br>[脚本页面](https://greasyfork.org/scripts/480094) | [安装脚本](https://greasyfork.org/scripts/480094/code/script.user.js)
+  
+  17. CSDN优化
+  <br>[脚本页面](https://greasyfork.org/scripts/406136) | [安装脚本](https://greasyfork.org/scripts/406136/code/script.user.js)
+  
+  18. 小红书优化
+  <br>[脚本页面](https://greasyfork.org/scripts/483960) | [安装脚本](https://greasyfork.org/scripts/483960/code/script.user.js)
+  
+  19. 简书优化
+  <br>[脚本页面](https://greasyfork.org/scripts/485483) | [安装脚本](https://greasyfork.org/scripts/485483/code/script.user.js)
+  
+  20. 图聚合展示by xhua
+  <br>[脚本页面](https://greasyfork.org/scripts/442098) | [安装脚本](https://greasyfork.org/scripts/442098/code/script.user.js)
+
+  21. --*-*-- anti-redirect 去除重定向
   <br>[脚本页面](https://greasyfork.org/scripts/11915) | [安装脚本](https://greasyfork.org/scripts/11915/code/anti-redirect.user.js)
 
-  ## 自写自用的两个脚本
+  ## 自写自用的几个脚本
   
   1. NGA网址重定向
   <br>[脚本页面](https://greasyfork.org/scripts/22508) | [安装脚本](https://greasyfork.org/scripts/22508/code/script.user.js)
+
+  2. Disable Video AutoPlay
+  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Disable%20Video%20AutoPlay.user.js)
   
-  2. UA自由切
+  3. Force Enable Zoom
+  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Force%20Enable%20Zoom.user.js)
+
+  4. Remove Footers
+  <br>[安装脚本](https://github.com/mt25cyb/mt25cyb.github.io/raw/main/JavaScript/Remove%20Footers.user.js)
+
+  5. UA自由切 -- 暂时废弃
   <br>[脚本页面](https://greasyfork.org/scripts/490764) | [安装脚本](https://greasyfork.org/scripts/490764/code/script.user.js)
 
 
